@@ -493,9 +493,17 @@ li .item:hover .icon {
   padding-left: 107px;
 }
 
+.set4 address {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .set4 ul li svg {
   fill: var(--gray-icon);
   height: 20px;
+  transition: 500ms;
   width: 20px;
 }
 
@@ -509,9 +517,11 @@ li .item:hover .icon {
 
 .set4 ul li {
   align-items: center;
+  border-radius: 2em;
   display: flex;
   height: 40px;
   justify-content: center;
+  transition: 500ms;
   width: 40px;
 }
 
@@ -519,31 +529,80 @@ li .item:hover .icon {
   color: #fff;
   font-size: 17px;
   height: 70px;
-  margin: 17px 0 0 20px;
+  margin: 17px 0 0 5em;
   width: 0;
 }
 
 .set4 ul li:hover {
   align-items: center;
   background-color: var(--primary-color);
-  border-radius: 2em;
+  box-shadow: 0 4px 4px 0 rgb(20, 20, 20);
   cursor: pointer;
   display: flex;
   height: 40px;
   justify-content: center;
+  transition: 500ms;
   width: 40px;
+}
+
+.set4 ul li:active {
+  background-color: #0c66afd8;
 }
 
 .set4 ul li:hover svg {
   cursor: pointer;
   fill: var(--white-1);
+  transition: 500ms;
 }
 
-.set4 address {
-  align-items: flex-start;
+.set4 div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+}
+
+.set4 div div {
+  display: flex;
+  flex-direction: row;
+  margin-left: 4em;
+}
+
+.formulary {
+  height: 40px !important;
+  width: 18em !important;
+}
+
+.set4 button {
+  align-items: center;
+  background-color: var(--gray-3);
+  border: solid 2px #2196F3;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  height: 36px;
+  gap: 15px;
+  margin-top: 5px;
+  transition: 500ms;
+  width: 10em;
+}
+
+.set4 button:hover {
+  box-shadow: 0 4px 4px 0 #19191a;
+  transition: 500ms;
+}
+
+.set4 button:active {
+  background-color: #0c66afd8;
+  border-color: #0c66afd8;
+}
+
+.set4 input {
+  border-color: #757575;
+  background-color: var(--gray-3);
+  border-radius: 4px;
+  height: 30px;
+  margin: 0 15px 0 6%;
+  width: 20em;
 }
 
 .set4 {
